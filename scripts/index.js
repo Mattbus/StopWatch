@@ -24,27 +24,29 @@ function incrementTime() {
   } else {
     if (mseconds <= 99) {
       mseconds++;
+      msecondsElement.innerText = mseconds;
     }
     if (mseconds === 100) {
       seconds++;
       mseconds = 0;
+      secondsElement.innerText = seconds;
     }
     if (seconds === 60) {
       minutes++;
       seconds = 0;
+      minutesElement.innerText = minutes;
     }
     if (minutes === 60) {
       hour++;
       minutes = O;
+      hourElement.innerText = hour;
     }
+    console.log("increment");
   }
-
-  console.log(mseconds, seconds, minutes, hour);
 }
 //
 
 function start() {
-  console.log("start");
   interval = setInterval(incrementTime, 10);
 }
 
@@ -52,13 +54,13 @@ function pause() {
   console.log("pause");
   if (setPause === true) {
     setPause = false;
-    
   } else {
     setPause = true;
-    
   }
+  console.log(setPause);
 }
 function stop() {
+  console.log("stop");
   mseconds = 0;
   seconds = 0;
   minutes = 0;
