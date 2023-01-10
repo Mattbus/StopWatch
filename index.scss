@@ -3,7 +3,9 @@
 // Font
 
 .watch-card {
-  background-color: lightgrey;
+  background-color: rgba(241, 241, 241, 0.285);
+  border-radius: 20px;
+  border: 4px solid #258cc9;
 }
 
 .time {
@@ -13,4 +15,8 @@
 .action-button {
   border-radius: 20px;
   border: 3px solid;
+}
+
+.fa-hourglass {
+  font-size: 2rem;
 }

@@ -25,42 +25,45 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-<div class="container-fluid">
-  <div class="container-fluid watch-card text-center  pt-5 pb-5  ">
+<div class="container">
+  <div class="container-fluid watch-card text-center mt-5 pt-2 pb-5  ">
     <h5 class="mt-5">
       A Little JS-Project
     </h5>
 
-    <h1 class="mt-5">The Responsive Stopwatch
+    <h1 class="mt-2">The Responsive Stopwatch
     </h1>
 
-    <i class="fa-regular fa-hourglass"></i>
+    <i class="fa-regular fa-hourglass mt-4 mb-3"> </i>
     <p class="mt-2 mb-3 time">
-      <span>0.00</span>
+      <span id="hour">0</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="mseconds">00</span>
     </p>
 
     <div class="row">
-      <div class="col-12 text-center ">
-        <button type="button" class="btn btn-outline-success action-button ">
-          <i class="fa-solid fa-play"></i>
+      <div class="col-12 col-md-4 text-center text-md-end mt-2">
+        <button id="start" type="button" class="btn btn-outline-success action-button ">
+          <i class="fa-solid fa-play "></i>
 
-          <span class="d-none">Start</span>
-             
+          <span class="d-none d-md-inline "> <strong>Start</strong>
+          </span>
+              
           
         </button>
       </div>
-      <div class="col-12 text-center mt-2 mb-2">
-        <button type="button" class="btn btn-outline-primary action-button">
+      <div class="col-12 col-md-4 text-center mt-2 ">
+        <button id="pause" type="button" class="btn btn-outline-primary action-button">
           
           <i class="fa-solid fa-pause "></i>
-          <span class="d-none">Pause
+          <span class="d-none d-md-inline"> <strong>
+            Pause
+          </strong>
 
         </span> </button>
       </div>
-      <div class="col-12 text-center ">
-        <button type="button"" class="btn btn-outline-danger action-button ">
+      <div class="col-12 col-md-4 text-center text-md-start mt-2">
+        <button id="stop" type="button"" class="btn btn-outline-danger action-button ">
           <i class="fa-solid fa-stop"></i>
-          <span class="d-none"> Stopp</span>
+          <span class="d-none d-md-inline"> <strong>Stopp</strong></span>
          
         </button>
       </div> 
@@ -79,5 +82,6 @@
 
 
     <script src="inc/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
